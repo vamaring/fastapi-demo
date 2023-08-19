@@ -1,0 +1,8 @@
+server {
+	listen 80; # Incoming traffic
+	server_name 35.161.14.36; # Public IPV4 Address
+	location / {
+		proxy_pass http://127.0.0.1:8000;
+	}
+
+}
